@@ -37,6 +37,7 @@ function NewRecipe({ user }) {
       }),
     }).then((r) => {
       setIsLoading(false);
+      console.log(r.json())
       if (r.ok) {
         history.push("/");
       } else {
